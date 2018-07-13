@@ -1,0 +1,6 @@
+# exclude everything except directory foo/bar
+/.classpath
+/.mvn
+/.project
+/.settings
+/target
