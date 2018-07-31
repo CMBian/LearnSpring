@@ -1,6 +1,6 @@
 # exclude everything except directory foo/bar
 #/.classpath
-/.mvn
+#/.mvn
 #/.project
 /.settings
 /target
