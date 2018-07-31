@@ -5,6 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
+    
+    <div th:if="${name != null}">
+    <div th:each="person : ${name}" >
+    	<div th:text="${person.name}" />
+       <div th:each="item : ${person.tasks}" th:text="${item.details}"></div>
+    </div>
+</div>
 </body>
 </html>
